@@ -1,0 +1,2 @@
+# VRCWorldCreateTemplate-Public
+VRChatのワールド開発に使えるプログラム群です。
