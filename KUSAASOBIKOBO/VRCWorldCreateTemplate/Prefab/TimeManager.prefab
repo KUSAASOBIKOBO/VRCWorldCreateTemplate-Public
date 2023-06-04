@@ -1,0 +1,298 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6662239917041915268
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6662239917041915265}
+  - component: {fileID: 6662239917041915266}
+  - component: {fileID: 6662239917041915267}
+  m_Layer: 0
+  m_Name: TimeManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6662239917041915265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662239917041915268}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5761825, y: -0.52677155, z: 24.90017}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6662239917472454752}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6662239917041915266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662239917041915268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0de9c9955538ad14bbcd925af40d2068, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 0
+    SerializedBytes: 0301030000006e006f0077002f000000000119000000530079007300740065006d002e004400610074006500540069006d0065002c0020006d00730063006f0072006c00690062001c0000000000000000050301090000006c006f00630061006c00540069006d00650030000000001c0000000000000000050301080000006a00730074004300610063006800650030000000001c000000000000000005
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  _udonSharpBackingUdonBehaviour: {fileID: 6662239917041915267}
+  nowTimeOfSky: 0
+  nowWeather: 0
+  currentSkybox: {fileID: 2100000, guid: 37748ae3c41fed94daf9f61b7e6e7236, type: 2}
+  currentColor: {r: 0.24313726, g: 0.2901961, b: 0.3627451, a: 0}
+  isChangeSourceColor: 1
+  rainParticles: []
+  snowParticles: []
+  _externalResourceLoadManager: {fileID: 0}
+  isUseUrlIndexSunriseSkybox: 0
+  isUseUrlIndexMorningSkybox: 0
+  isUseUrlIndexDaytimeSkybox: 0
+  isUseUrlIndexTwilightSkybox: 0
+  isUseUrlIndexNightSkybox: 0
+  isUseUrlIndexCloudyDaytimeSkybox: 0
+  isUseUrlIndexCloudyNightSkybox: 0
+  isQuickLoad: 0
+  isStandardLoad: 0
+  sunriseSkyboxUrlIndexQuickLoad: 0
+  morningSkyboxUrlIndexQuickLoad: 0
+  daytimeSkyboxUrlIndexQuickLoad: 0
+  twilightSkyboxUrlIndexQuickLoad: 0
+  nightSkyboxUrlIndexQuickLoad: 0
+  cloudyDaytimeSkyboxUrlIndexQuickLoad: 0
+  cloudyNightSkyboxUrlIndexQuickLoad: 0
+  sunriseSkyboxUrlIndex: 
+  morningSkyboxUrlIndex: 
+  daytimeSkyboxUrlIndex: 
+  twilightSkyboxUrlIndex: 
+  nightSkyboxUrlIndex: 
+  cloudyDaytimeSkyboxUrlIndex: 
+  cloudyNightSkyboxUrlIndex: 
+  sunriseSkybox: {fileID: 2100000, guid: 9ab724edb722e34409db4c67783612b2, type: 2}
+  morningSkybox: {fileID: 2100000, guid: 743f2c35bd1581c46821ef1a7c728506, type: 2}
+  daytimeSkybox: {fileID: 2100000, guid: f40af88b6ed45ec429f82617036e2db6, type: 2}
+  twilightSkybox: {fileID: 2100000, guid: bb412db1aa45cd641b55225cb671b2ba, type: 2}
+  nightSkybox: {fileID: 2100000, guid: 37748ae3c41fed94daf9f61b7e6e7236, type: 2}
+  cloudyDaytimeSkybox: {fileID: 2100000, guid: c372244466395644f93e092f235d3933, type: 2}
+  cloudyNightSkybox: {fileID: 2100000, guid: da73a69e6507ef346abcaef7e9679f4c, type: 2}
+  sunriseColor: {r: 0.24367112, g: 0.2908942, b: 0.36078435, a: 0}
+  morningColor: {r: 0.48514998, g: 0.5803922, b: 0.72305536, a: 0}
+  daytimeColor: {r: 0.48514998, g: 0.5803922, b: 0.72305536, a: 0}
+  twilightColor: {r: 0.72156864, g: 0.55553687, b: 0.4862745, a: 0}
+  nightColor: {r: 0.24313726, g: 0.2901961, b: 0.36078432, a: 0}
+  cloudyDaytimeColor: {r: 0.4862745, g: 0.5803922, b: 0.72156864, a: 0}
+  cloudyNightColor: {r: 0.24313726, g: 0.2901961, b: 0.36078432, a: 0}
+  updateInterval: 1
+  isGetEveryFrame: 0
+  _jstAnimationSync: []
+  isAnimationSyncRegularly: 1
+  animationSyncIntervalSecond: 60
+  dateTextFormat: yyyy/MM/dd (ddd)
+  timeTextFormat: HH:mm:ss
+  yearStringOffset: 20
+  jstDateText: []
+  jstTimeText: []
+  localDateText: []
+  localTimeText: []
+  localTimeAlarmText: []
+  jstClockLongHand: []
+  jstClockShortHand: []
+  localClockLongHand: []
+  localClockShortHand: []
+  timeLimitObject: []
+  timeLimit: []
+  externalData: {fileID: 0}
+  localTimeAlarmHour: 9
+  localTimeAlarmMinute: 30
+  isAlarm: 0
+  AlarmAudioSource: {fileID: 6662239917472454754}
+--- !u!114 &6662239917041915267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662239917041915268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45115577ef41a5b4ca741ed302693907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactTextPlacement: {fileID: 0}
+  interactText: Use
+  interactTextGO: {fileID: 0}
+  proximity: 2
+  SynchronizePosition: 0
+  AllowCollisionOwnershipTransfer: 0
+  Reliable: 0
+  _syncMethod: 1
+  serializedProgramAsset: {fileID: 11400000, guid: ce965f73051c5294a80c5b1c3286602a,
+    type: 2}
+  programSource: {fileID: 11400000, guid: 2195a99d75a9b2045a1f11a7fea13a34, type: 2}
+  serializedPublicVariablesBytesString: Ai8AAAAAATIAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAFQAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AAAAAAAYBAAAAAAAAACcBBAAAAHQAeQBwAGUAAWgAAABTAHkAcwB0AGUAbQAuAEMAbwBsAGwAZQBjAHQAaQBvAG4AcwAuAEcAZQBuAGUAcgBpAGMALgBMAGkAcwB0AGAAMQBbAFsAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4ALgBJAG4AdABlAHIAZgBhAGMAZQBzAC4ASQBVAGQAbwBuAFYAYQByAGkAYQBiAGwAZQAsACAAVgBSAEMALgBVAGQAbwBuAC4AQwBvAG0AbQBvAG4AXQBdACwAIABtAHMAYwBvAHIAbABpAGIAAQEJAAAAVgBhAHIAaQBhAGIAbABlAHMALwEAAAABaAAAAFMAeQBzAHQAZQBtAC4AQwBvAGwAbABlAGMAdABpAG8AbgBzAC4ARwBlAG4AZQByAGkAYwAuAEwAaQBzAHQAYAAxAFsAWwBWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAEkAbgB0AGUAcgBmAGEAYwBlAHMALgBJAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlACwAIABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgBdAF0ALAAgAG0AcwBjAG8AcgBsAGkAYgABAAAABgEAAAAAAAAAAi8CAAAAAUkAAABWAFIAQwAuAFUAZABvAG4ALgBDAG8AbQBtAG8AbgAuAFUAZABvAG4AVgBhAHIAaQBhAGIAbABlAGAAMQBbAFsAUwB5AHMAdABlAG0ALgBJAG4AdAAzADIALAAgAG0AcwBjAG8AcgBsAGkAYgBdAF0ALAAgAFYAUgBDAC4AVQBkAG8AbgAuAEMAbwBtAG0AbwBuAAIAAAAGAgAAAAAAAAAnAQQAAAB0AHkAcABlAAEXAAAAUwB5AHMAdABlAG0ALgBTAHQAcgBpAG4AZwAsACAAbQBzAGMAbwByAGwAaQBiACcBCgAAAFMAeQBtAGIAbwBsAE4AYQBtAGUAAR8AAABfAF8AXwBVAGQAbwBuAFMAaABhAHIAcABCAGUAaABhAHYAaQBvAHUAcgBWAGUAcgBzAGkAbwBuAF8AXwBfACcBBAAAAHQAeQBwAGUAARYAAABTAHkAcwB0AGUAbQAuAEkAbgB0ADMAMgAsACAAbQBzAGMAbwByAGwAaQBiABcBBQAAAFYAYQBsAHUAZQACAAAABwUHBQcF
+  publicVariablesUnityEngineObjects: []
+  publicVariablesSerializationDataFormat: 0
+--- !u!1 &6662239917472454755
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6662239917472454752}
+  - component: {fileID: 6662239917472454754}
+  - component: {fileID: 6662239917472454753}
+  m_Layer: 0
+  m_Name: AlarmAudioSource
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6662239917472454752
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662239917472454755}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5761825, y: 0.52677155, z: -24.90017}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6662239917041915265}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &6662239917472454754
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662239917472454755}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9b72922017d99e5479ccea9d88e7347e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 99009.9
+  MaxDistance: 100000
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &6662239917472454753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6662239917472454755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -617992517, guid: 661092b4961be7145bfbe56e1e62337b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gain: 30
+  Far: 10
+  Near: 0
+  VolumetricRadius: 0
+  EnableSpatialization: 0
+  UseAudioSourceVolumeCurve: 1
