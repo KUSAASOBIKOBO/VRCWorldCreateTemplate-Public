@@ -99,5 +99,20 @@ namespace KUSAASOBIKOBO
             }
             return indexTmp;
         }
+
+        public int GetPlayerIndexFromDisplayName(string displayName) ///displayNameからplayerIndexに変換します。不正値の場合-1で返します。
+        {
+            int length_tmp = displayNameList.Length;
+            int indexTmp = -1;
+            for (int i = 0; i < length_tmp; i++)
+            {
+                if (displayNameList[i] == displayName)
+                {
+                    indexTmp = i;
+                    break;
+                }
+            }
+            return indexTmp;
+        }
     }
 }

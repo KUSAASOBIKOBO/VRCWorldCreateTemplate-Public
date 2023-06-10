@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: JstAudioClipSync
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: ceea13e244826de44b200de493f4310d,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: d9eac90c14a83174cbd9c4f3088984d9,
     type: 2}
   udonAssembly: 
   assemblyError: 

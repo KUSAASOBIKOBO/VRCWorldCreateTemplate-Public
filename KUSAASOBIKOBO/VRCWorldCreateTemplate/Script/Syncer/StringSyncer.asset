@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: StringSyncer
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: c832058926c394a42b4f9656409a39a6,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 51c23c63ab16ee149a8854bebca5c388,
     type: 2}
   udonAssembly: 
   assemblyError: 

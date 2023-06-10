@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: JstAnimationSync
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: cd965e9027a251a498f0cc31562d4bb3,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 073ee5ab9175f4f4cb8d04580ca88dfb,
     type: 2}
   udonAssembly: 
   assemblyError: 

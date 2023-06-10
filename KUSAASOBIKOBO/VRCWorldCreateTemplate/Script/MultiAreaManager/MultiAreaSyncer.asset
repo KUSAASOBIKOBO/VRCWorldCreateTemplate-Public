@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: MultiAreaSyncer
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 52d6e174f8e71c849acfa869bdc2bf22,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: a2381e43072844e4fbfd4f2fd80d479c,
     type: 2}
   udonAssembly: 
   assemblyError: 

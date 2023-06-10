@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: ExternalResourceLoadManager
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: f89b5380511b3714c9a05f06f748e9bf,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: f1b940d7c6f02c144ac0178a56f1c949,
     type: 2}
   udonAssembly: 
   assemblyError: 

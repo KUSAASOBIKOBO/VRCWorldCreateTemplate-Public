@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: LoadExternalDataFromStringDownloader
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 205bbf14c0be58041807ea1a38a5ccd6,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: bb08c4f114cfed2499dd7f50f6162038,
     type: 2}
   udonAssembly: 
   assemblyError: 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: MultiAreaLightingChangeButton
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 2d96d03b1a80ef547870af97f5bee164,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: a39a30fff7b98574a898a9b39ff2edbc,
     type: 2}
   udonAssembly: 
   assemblyError: 

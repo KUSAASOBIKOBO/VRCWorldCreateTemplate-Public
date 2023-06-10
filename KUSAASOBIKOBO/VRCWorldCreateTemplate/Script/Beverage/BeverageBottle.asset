@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: BeverageBottle
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: d58faffe1eae88c4981cbd7d35653599,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: de57bd6a7eb11104eb5e5f98fd934db7,
     type: 2}
   udonAssembly: 
   assemblyError: 

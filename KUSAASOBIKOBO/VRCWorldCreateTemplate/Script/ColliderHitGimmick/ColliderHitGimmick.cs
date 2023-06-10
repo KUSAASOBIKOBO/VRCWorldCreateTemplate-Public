@@ -166,6 +166,7 @@ namespace KUSAASOBIKOBO
         //private bool reserveGlobalSync = false;
         //private int reserveGlobalSyncCounter = 0;
         [Header("再生位置微調整の調整値")] public Text globalPlayVideoOffsetFeedback;
+        [Header("固定の同期先プレイヤー")] public FixSyncTargetPlayer _fixSyncTargetPlayer;
 
         /*その他外部リソース読み込み系(targetExternalResourceLoadManager必須)*/
         [Header("コライダー内に入ったときにデータをロードする")] public bool isDataLoad = false;
@@ -775,13 +776,30 @@ namespace KUSAASOBIKOBO
                 {
                     if (isMonitoringPlayer)
                     {
-                        for (int i = 0; i < playerListWithinRange.Length; i++)
+                        int playerIdTmp = -1;
+                        int playerIndexTmp = -1;
+
+                        if (_fixSyncTargetPlayer != null)
                         {
-                            if (playerListWithinRange[i] && i != myIndex)
+                            playerIdTmp = _fixSyncTargetPlayer.GetPlayerId();
+                            playerIndexTmp = _playerDataBase.GetPlayerIndexFromPlayerId(playerIdTmp);
+                        }
+
+                        if (playerIdTmp != -1 && playerIndexTmp != -1 && playerListWithinRange[playerIndexTmp])
+                        {
+                            targetExternalResourceLoadManager.SetupVideoPlayerWithPlayerIndex(playerIndexTmp);
+                            check_tmp = true;
+                        }
+                        else
+                        {
+                            for (int i = 0; i < playerListWithinRange.Length; i++)
                             {
-                                targetExternalResourceLoadManager.SetupVideoPlayerWithPlayerIndex(i);
-                                check_tmp = true;
-                                break;
+                                if (playerListWithinRange[i] && i != myIndex)
+                                {
+                                    targetExternalResourceLoadManager.SetupVideoPlayerWithPlayerIndex(i);
+                                    check_tmp = true;
+                                    break;
+                                }
                             }
                         }
                     }

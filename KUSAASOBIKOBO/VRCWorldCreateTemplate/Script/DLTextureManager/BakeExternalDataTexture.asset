@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: BakeExternalDataTexture
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 3fa3751cbdbfbfe42945442889840ca3,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 0508962f4869b6d469f4a33bf1ed6038,
     type: 2}
   udonAssembly: 
   assemblyError: 

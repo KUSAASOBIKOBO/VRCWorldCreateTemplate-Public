@@ -163,6 +163,11 @@ namespace KUSAASOBIKOBO
             //this.gameObject.SetActive(false);
         }
 
+        public void DropVideo() //ロードが失敗したときに行う処理です。強制停止時もこの処理が呼ばれます。
+        {
+            videoPlayer.Stop();
+        }
+
         public void StopLoad() //ロードが失敗したときに行う処理です。強制停止時もこの処理が呼ばれます。
         {
             if (DebugText != null) DebugText.text += "\n" + this + "StopLoad()";

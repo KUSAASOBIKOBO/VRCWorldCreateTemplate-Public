@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: BeverageGlass2Syncer
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: f89f8268163e7db439830873fa16a463,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: a679718ddd7864140aa050b96b95ce9e,
     type: 2}
   udonAssembly: 
   assemblyError: 

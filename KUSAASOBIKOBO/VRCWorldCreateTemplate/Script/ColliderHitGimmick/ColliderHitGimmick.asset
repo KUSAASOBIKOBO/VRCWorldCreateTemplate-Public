@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: ColliderHitGimmick
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 4133400cf8dde0841be74fc288867cc6,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: a9be51bc5d6f20742819a20c3a70f215,
     type: 2}
   udonAssembly: 
   assemblyError: 
@@ -44,7 +44,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 158
+      Data: 159
     - Name: 
       Entry: 7
       Data: 
@@ -5471,10 +5471,74 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: isDataLoad
+      Data: _fixSyncTargetPlayer
     - Name: $v
       Entry: 7
       Data: 297|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+    - Name: <Name>k__BackingField
+      Entry: 1
+      Data: _fixSyncTargetPlayer
+    - Name: <UserType>k__BackingField
+      Entry: 7
+      Data: 298|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: KUSAASOBIKOBO.FixSyncTargetPlayer, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: <SystemType>k__BackingField
+      Entry: 9
+      Data: 4
+    - Name: <SyncMode>k__BackingField
+      Entry: 7
+      Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: <IsSerialized>k__BackingField
+      Entry: 5
+      Data: true
+    - Name: _fieldAttributes
+      Entry: 7
+      Data: 299|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 300|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+    - Name: header
+      Entry: 1
+      Data: "\u56FA\u5B9A\u306E\u540C\u671F\u5148\u30D7\u30EC\u30A4\u30E4\u30FC"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: isDataLoad
+    - Name: $v
+      Entry: 7
+      Data: 301|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isDataLoad
@@ -5498,14 +5562,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 298|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 302|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 299|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 303|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u30C7\u30FC\u30BF\u3092\u30ED\u30FC\u30C9\u3059\u308B"
@@ -5532,13 +5596,13 @@ MonoBehaviour:
       Data: dataUrlIndex
     - Name: $v
       Entry: 7
-      Data: 300|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 304|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: dataUrlIndex
     - Name: <UserType>k__BackingField
       Entry: 7
-      Data: 301|System.RuntimeType, mscorlib
+      Data: 305|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: System.Int32[], mscorlib
@@ -5547,7 +5611,7 @@ MonoBehaviour:
       Data: 
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 301
+      Data: 305
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -5562,14 +5626,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 302|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 306|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 303|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 307|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u8AAD\u307F\u8FBC\u3080dataUrlIndex"
@@ -5596,7 +5660,7 @@ MonoBehaviour:
       Data: isSkyboxLoad
     - Name: $v
       Entry: 7
-      Data: 304|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 308|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isSkyboxLoad
@@ -5620,14 +5684,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 305|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 309|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 306|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 310|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u30B9\u30AB\u30A4\u30DC\u30C3\u30AF\u30B9\u3092\u30ED\u30FC\u30C9\u3059\u308B"
@@ -5654,7 +5718,7 @@ MonoBehaviour:
       Data: isSkyboxLoadQuick
     - Name: $v
       Entry: 7
-      Data: 307|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 311|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isSkyboxLoadQuick
@@ -5678,14 +5742,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 308|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 312|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 309|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 313|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30AF\u30A4\u30C3\u30AF\u30B9\u30AB\u30A4\u30DC\u30C3\u30AF\u30B9\u30ED\u30FC\u30C9\u3059\u308B\u304B"
@@ -5712,7 +5776,7 @@ MonoBehaviour:
       Data: isSkyboxLoadStandard
     - Name: $v
       Entry: 7
-      Data: 310|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 314|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isSkyboxLoadStandard
@@ -5736,14 +5800,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 311|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 315|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 312|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 316|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u500B\u5225\u30C6\u30AF\u30B9\u30C1\u30E3\u30ED\u30FC\u30C9\u3059\u308B\u304B"
@@ -5770,7 +5834,7 @@ MonoBehaviour:
       Data: isSkyboxLoadBeforeResetTexture
     - Name: $v
       Entry: 7
-      Data: 313|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 317|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isSkyboxLoadBeforeResetTexture
@@ -5794,14 +5858,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 314|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 318|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 315|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 319|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B9\u30AB\u30A4\u30DC\u30C3\u30AF\u30B9\u30ED\u30FC\u30C9\u524D\u306B\u30C6\u30AF\u30B9\u30C1\u30E3\u3092\u30EA\u30BB\u30C3\u30C8\u3059\u308B\u304B"
@@ -5828,16 +5892,16 @@ MonoBehaviour:
       Data: skyboxUrlIndex
     - Name: $v
       Entry: 7
-      Data: 316|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 320|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: skyboxUrlIndex
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 301
+      Data: 305
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 301
+      Data: 305
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -5852,14 +5916,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 317|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 321|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 318|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 322|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u8AAD\u307F\u8FBC\u3080skyboxUrlIndex"
@@ -5886,7 +5950,7 @@ MonoBehaviour:
       Data: quickSkyBoxUrlIndex
     - Name: $v
       Entry: 7
-      Data: 319|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 323|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: quickSkyBoxUrlIndex
@@ -5910,14 +5974,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 320|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 324|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 321|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 325|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u8AAD\u307F\u8FBC\u3080quickSkyBoxUrlIndex"
@@ -5944,7 +6008,7 @@ MonoBehaviour:
       Data: isSpSkyboxLoad
     - Name: $v
       Entry: 7
-      Data: 322|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 326|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isSpSkyboxLoad
@@ -5968,14 +6032,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 323|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 327|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 324|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 328|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306BSP\u30B9\u30AB\u30A4\u30DC\u30C3\u30AF\u30B9\u3092\u30ED\u30FC\u30C9\u3059\u308B"
@@ -6002,7 +6066,7 @@ MonoBehaviour:
       Data: isSpSkyboxLoadQuick
     - Name: $v
       Entry: 7
-      Data: 325|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 329|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isSpSkyboxLoadQuick
@@ -6026,14 +6090,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 326|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 330|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 327|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 331|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30AF\u30A4\u30C3\u30AFSP\u30B9\u30AB\u30A4\u30DC\u30C3\u30AF\u30B9\u30ED\u30FC\u30C9\u3059\u308B\u304B"
@@ -6060,7 +6124,7 @@ MonoBehaviour:
       Data: isSpSkyboxLoadStandard
     - Name: $v
       Entry: 7
-      Data: 328|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 332|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isSpSkyboxLoadStandard
@@ -6084,14 +6148,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 329|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 333|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 330|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 334|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u500B\u5225\u30C6\u30AF\u30B9\u30C1\u30E3\u30ED\u30FC\u30C9\u3059\u308B\u304B"
@@ -6118,7 +6182,7 @@ MonoBehaviour:
       Data: isSpSkyboxLoadBeforeResetTexture
     - Name: $v
       Entry: 7
-      Data: 331|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 335|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isSpSkyboxLoadBeforeResetTexture
@@ -6142,14 +6206,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 332|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 336|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 333|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 337|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "SP\u30B9\u30AB\u30A4\u30DC\u30C3\u30AF\u30B9\u30ED\u30FC\u30C9\u524D\u306B\u30C6\u30AF\u30B9\u30C1\u30E3\u3092\u30EA\u30BB\u30C3\u30C8\u3059\u308B\u304B"
@@ -6176,16 +6240,16 @@ MonoBehaviour:
       Data: spSkyboxUrlIndex
     - Name: $v
       Entry: 7
-      Data: 334|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 338|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: spSkyboxUrlIndex
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 301
+      Data: 305
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 301
+      Data: 305
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -6200,14 +6264,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 335|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 339|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 336|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 340|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u8AAD\u307F\u8FBC\u3080spSkyboxUrlIndex"
@@ -6234,7 +6298,7 @@ MonoBehaviour:
       Data: quickSpSkyBoxUrlIndex
     - Name: $v
       Entry: 7
-      Data: 337|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 341|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: quickSpSkyBoxUrlIndex
@@ -6258,14 +6322,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 338|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 342|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 339|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 343|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u8AAD\u307F\u8FBC\u3080quickSpSkyboxUrlIndex"
@@ -6292,7 +6356,7 @@ MonoBehaviour:
       Data: isCommonLoad
     - Name: $v
       Entry: 7
-      Data: 340|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 344|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isCommonLoad
@@ -6316,14 +6380,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 341|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 345|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 342|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 346|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u30C6\u30AF\u30B9\u30C1\u30E3\u3092\u30ED\u30FC\u30C9\u3059\u308B"
@@ -6350,7 +6414,7 @@ MonoBehaviour:
       Data: isCommonLoadQuick
     - Name: $v
       Entry: 7
-      Data: 343|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 347|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isCommonLoadQuick
@@ -6374,14 +6438,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 344|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 348|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 345|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 349|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30AF\u30A4\u30C3\u30AF\u30C6\u30AF\u30B9\u30C1\u30E3\u3092\u30ED\u30FC\u30C9\u3059\u308B\u304B"
@@ -6408,7 +6472,7 @@ MonoBehaviour:
       Data: isCommonLoadStandard
     - Name: $v
       Entry: 7
-      Data: 346|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 350|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isCommonLoadStandard
@@ -6432,14 +6496,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 347|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 351|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 348|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 352|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u500B\u5225\u30C6\u30AF\u30B9\u30C1\u30E3\u30ED\u30FC\u30C9\u3059\u308B\u304B"
@@ -6466,7 +6530,7 @@ MonoBehaviour:
       Data: isCommonLoadBeforeResetTexture
     - Name: $v
       Entry: 7
-      Data: 349|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 353|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isCommonLoadBeforeResetTexture
@@ -6490,14 +6554,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 350|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 354|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 351|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 355|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30C6\u30AF\u30B9\u30C1\u30E3\u30ED\u30FC\u30C9\u524D\u306B\u30C6\u30AF\u30B9\u30C1\u30E3\u3092\u30EA\u30BB\u30C3\u30C8\u3059\u308B\u304B"
@@ -6524,7 +6588,7 @@ MonoBehaviour:
       Data: isCommonTexture4096
     - Name: $v
       Entry: 7
-      Data: 352|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 356|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isCommonTexture4096
@@ -6548,14 +6612,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 353|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 357|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 354|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 358|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "4096\u30C6\u30AF\u30B9\u30C1\u30E34x4\u304B(\u30AF\u30A4\u30C3\u30AF\u9650\u5B9A)"
@@ -6582,13 +6646,13 @@ MonoBehaviour:
       Data: commonTexture4096
     - Name: $v
       Entry: 7
-      Data: 355|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 359|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: commonTexture4096
     - Name: <UserType>k__BackingField
       Entry: 7
-      Data: 356|System.RuntimeType, mscorlib
+      Data: 360|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: UnityEngine.Texture2D, UnityEngine.CoreModule
@@ -6597,7 +6661,7 @@ MonoBehaviour:
       Data: 
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 356
+      Data: 360
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -6612,14 +6676,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 357|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 361|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 358|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 362|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u66F8\u304D\u8FBC\u307F\u51484096\u30C6\u30AF\u30B9\u30C1\u30E3"
@@ -6646,16 +6710,16 @@ MonoBehaviour:
       Data: commonUrlIndex
     - Name: $v
       Entry: 7
-      Data: 359|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 363|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: commonUrlIndex
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 301
+      Data: 305
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 301
+      Data: 305
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -6670,14 +6734,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 360|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 364|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 361|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 365|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u8AAD\u307F\u8FBC\u3080commonUrlIndex"
@@ -6704,7 +6768,7 @@ MonoBehaviour:
       Data: quickCommonUrlIndex
     - Name: $v
       Entry: 7
-      Data: 362|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 366|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: quickCommonUrlIndex
@@ -6728,14 +6792,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 363|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 367|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 364|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 368|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u8AAD\u307F\u8FBC\u3080quickCommonUrlIndex"
@@ -6762,7 +6826,7 @@ MonoBehaviour:
       Data: isBGMLoad
     - Name: $v
       Entry: 7
-      Data: 365|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 369|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isBGMLoad
@@ -6786,14 +6850,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 366|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 370|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 367|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 371|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306BBGM\u3092\u30ED\u30FC\u30C9\u3059\u308B"
@@ -6820,16 +6884,16 @@ MonoBehaviour:
       Data: BGMUrlIndex
     - Name: $v
       Entry: 7
-      Data: 368|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 372|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: BGMUrlIndex
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 301
+      Data: 305
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 301
+      Data: 305
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -6844,14 +6908,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 369|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 373|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 370|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 374|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u8AAD\u307F\u8FBC\u3080BGMUrlIndex"
@@ -6878,7 +6942,7 @@ MonoBehaviour:
       Data: isMultiBGMLoad
     - Name: $v
       Entry: 7
-      Data: 371|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 375|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isMultiBGMLoad
@@ -6902,14 +6966,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 372|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 376|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 373|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 377|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u7A7A\u9593BGM\u3092\u30ED\u30FC\u30C9\u3059\u308B"
@@ -6936,16 +7000,16 @@ MonoBehaviour:
       Data: multiBGMUrlIndex
     - Name: $v
       Entry: 7
-      Data: 374|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 378|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: multiBGMUrlIndex
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 301
+      Data: 305
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 301
+      Data: 305
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -6960,14 +7024,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 375|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 379|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 376|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 380|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u8AAD\u307F\u8FBC\u3080multiBGMUrlIndex"
@@ -6994,7 +7058,7 @@ MonoBehaviour:
       Data: isShowOverlayText
     - Name: $v
       Entry: 7
-      Data: 377|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 381|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isShowOverlayText
@@ -7018,14 +7082,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 378|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 382|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 379|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 383|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u30BF\u30A4\u30C8\u30EB\u3092\u8868\u793A\u3059\u308B"
@@ -7052,13 +7116,13 @@ MonoBehaviour:
       Data: overlayTitle
     - Name: $v
       Entry: 7
-      Data: 380|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 384|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: overlayTitle
     - Name: <UserType>k__BackingField
       Entry: 7
-      Data: 381|System.RuntimeType, mscorlib
+      Data: 385|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: System.String, mscorlib
@@ -7067,7 +7131,7 @@ MonoBehaviour:
       Data: 
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 381
+      Data: 385
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -7082,14 +7146,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 382|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 386|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 383|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 387|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u8868\u793A\u3059\u308B\u30BF\u30A4\u30C8\u30EB"
@@ -7116,7 +7180,7 @@ MonoBehaviour:
       Data: overlayTitleInterval
     - Name: $v
       Entry: 7
-      Data: 384|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 388|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: overlayTitleInterval
@@ -7140,14 +7204,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 385|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 389|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 386|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 390|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u30BF\u30A4\u30C8\u30EB\u3092\u8868\u793A\u3059\u308B\u6642\u9593"
@@ -7174,7 +7238,7 @@ MonoBehaviour:
       Data: isLoadPoster
     - Name: $v
       Entry: 7
-      Data: 387|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 391|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isLoadPoster
@@ -7198,14 +7262,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 388|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 392|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 389|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 393|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u30DD\u30B9\u30BF\u30FC\u3092\u8AAD\u307F\u8FBC\u3080"
@@ -7232,16 +7296,16 @@ MonoBehaviour:
       Data: posterUrlId
     - Name: $v
       Entry: 7
-      Data: 390|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 394|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: posterUrlId
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 301
+      Data: 305
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 301
+      Data: 305
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -7256,14 +7320,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 391|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 395|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 392|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 396|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u8868\u793A\u3059\u308B\u30DD\u30B9\u30BF\u30FC\u306EURLIndex"
@@ -7290,13 +7354,13 @@ MonoBehaviour:
       Data: posterMaxWidth
     - Name: $v
       Entry: 7
-      Data: 393|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 397|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: posterMaxWidth
     - Name: <UserType>k__BackingField
       Entry: 7
-      Data: 394|System.RuntimeType, mscorlib
+      Data: 398|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: System.Single[], mscorlib
@@ -7305,7 +7369,7 @@ MonoBehaviour:
       Data: 
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 394
+      Data: 398
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -7320,14 +7384,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 395|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 399|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 396|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 400|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304D\u306B\u8868\u793A\u3059\u308B\u30DD\u30B9\u30BF\u30FC\u306E\u6700\u5927\u6A2A\u5E45"
@@ -7354,13 +7418,13 @@ MonoBehaviour:
       Data: poster
     - Name: $v
       Entry: 7
-      Data: 397|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 401|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: poster
     - Name: <UserType>k__BackingField
       Entry: 7
-      Data: 398|System.RuntimeType, mscorlib
+      Data: 402|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: KUSAASOBIKOBO.ImageDownloadSafe[], Assembly-CSharp
@@ -7369,7 +7433,7 @@ MonoBehaviour:
       Data: 
     - Name: <SystemType>k__BackingField
       Entry: 7
-      Data: 399|System.RuntimeType, mscorlib
+      Data: 403|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: UnityEngine.Component[], UnityEngine.CoreModule
@@ -7390,14 +7454,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 400|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 404|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 401|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 405|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30DD\u30B9\u30BF\u30FC(ImageDownloadSafe)"
@@ -7424,7 +7488,7 @@ MonoBehaviour:
       Data: isUseGameObjectChangeActiveGroup1
     - Name: $v
       Entry: 7
-      Data: 402|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 406|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isUseGameObjectChangeActiveGroup1
@@ -7448,14 +7512,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 403|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 407|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 404|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 408|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304DGameObject\u306E\u30A2\u30AF\u30C6\u30A3\u30D6\u72B6\u614B\u3092\u5909\u66F4\u3059\u308B\u304B(group1)"
@@ -7482,7 +7546,7 @@ MonoBehaviour:
       Data: isUseGameObjectChangeActiveGroup2
     - Name: $v
       Entry: 7
-      Data: 405|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 409|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isUseGameObjectChangeActiveGroup2
@@ -7506,14 +7570,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 406|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 410|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 407|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 411|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304DGameObject\u306E\u30A2\u30AF\u30C6\u30A3\u30D6\u72B6\u614B\u3092\u5909\u66F4\u3059\u308B\u304B(group2)"
@@ -7540,7 +7604,7 @@ MonoBehaviour:
       Data: isUseGameObjectChangeActiveGroup3
     - Name: $v
       Entry: 7
-      Data: 408|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 412|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isUseGameObjectChangeActiveGroup3
@@ -7564,14 +7628,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 409|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 413|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 410|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 414|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304DGameObject\u306E\u30A2\u30AF\u30C6\u30A3\u30D6\u72B6\u614B\u3092\u5909\u66F4\u3059\u308B\u304B(group3)"
@@ -7598,7 +7662,7 @@ MonoBehaviour:
       Data: isUseGameObjectChangeActiveGroup4
     - Name: $v
       Entry: 7
-      Data: 411|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 415|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isUseGameObjectChangeActiveGroup4
@@ -7622,14 +7686,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 412|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 416|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 413|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 417|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304DGameObject\u306E\u30A2\u30AF\u30C6\u30A3\u30D6\u72B6\u614B\u3092\u5909\u66F4\u3059\u308B\u304B(group4)"
@@ -7656,7 +7720,7 @@ MonoBehaviour:
       Data: isUseGameObjectChangeActiveGroup5
     - Name: $v
       Entry: 7
-      Data: 414|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 418|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isUseGameObjectChangeActiveGroup5
@@ -7680,14 +7744,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 415|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 419|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 416|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 420|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304DGameObject\u306E\u30A2\u30AF\u30C6\u30A3\u30D6\u72B6\u614B\u3092\u5909\u66F4\u3059\u308B\u304B(group5)"
@@ -7714,7 +7778,7 @@ MonoBehaviour:
       Data: isUnActiveNotTargetWhenInCollider
     - Name: $v
       Entry: 7
-      Data: 417|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 421|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isUnActiveNotTargetWhenInCollider
@@ -7738,14 +7802,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 418|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 422|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 419|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 423|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304D\u5BFE\u8C61\u4EE5\u5916\u306E\u3059\u3079\u3066\u306E\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u30EA\u30B9\u30C8\u306EGameObject\u3092\u975E\u30A2\u30AF\u30C6\u30A3\u30D6\u306B\u3059\u308B"
@@ -7772,7 +7836,7 @@ MonoBehaviour:
       Data: isUnActiveActiveTargetsWhenExit
     - Name: $v
       Entry: 7
-      Data: 420|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 424|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isUnActiveActiveTargetsWhenExit
@@ -7796,14 +7860,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 421|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 425|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 422|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 426|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u3092\u51FA\u305F\u3068\u304D\u30A2\u30AF\u30C6\u30A3\u30D6\u5BFE\u8C61\u3092\u975E\u30A2\u30AF\u30C6\u30A3\u30D6\u306B\u3059\u308B"
@@ -7830,7 +7894,7 @@ MonoBehaviour:
       Data: isActiveUnActiveTargetsWhenExit
     - Name: $v
       Entry: 7
-      Data: 423|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 427|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isActiveUnActiveTargetsWhenExit
@@ -7854,14 +7918,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 424|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 428|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 425|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 429|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u3092\u51FA\u305F\u3068\u304D\u975E\u30A2\u30AF\u30C6\u30A3\u30D6\u5BFE\u8C61\u3092\u30A2\u30AF\u30C6\u30A3\u30D6\u306B\u3059\u308B"
@@ -7888,7 +7952,7 @@ MonoBehaviour:
       Data: isGameObjectChangeActiveGlobal
     - Name: $v
       Entry: 7
-      Data: 426|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 430|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isGameObjectChangeActiveGlobal
@@ -7912,14 +7976,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 427|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 431|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 428|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 432|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u81EA\u5206\u4EE5\u5916\u306E\u30D7\u30EC\u30A4\u30E4\u30FC\u304C\u30B3\u30E9\u30A4\u30C0\u30FC\u306B\u5165\u3063\u305F\u5834\u5408\u3082\u30A2\u30AF\u30C6\u30A3\u30D6\u72B6\u614B\u3092\u5909\u66F4\u3059\u308B"
@@ -7946,13 +8010,13 @@ MonoBehaviour:
       Data: changeActiveObjectList
     - Name: $v
       Entry: 7
-      Data: 429|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 433|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: changeActiveObjectList
     - Name: <UserType>k__BackingField
       Entry: 7
-      Data: 430|System.RuntimeType, mscorlib
+      Data: 434|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: KUSAASOBIKOBO.GameObjectList, Assembly-CSharp
@@ -7976,14 +8040,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 431|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 435|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 432|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 436|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30AA\u30D6\u30B8\u30A7\u30AF\u30C8\u30EA\u30B9\u30C8"
@@ -8010,13 +8074,13 @@ MonoBehaviour:
       Data: activeTargetGameObjectGroup1
     - Name: $v
       Entry: 7
-      Data: 433|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 437|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: activeTargetGameObjectGroup1
     - Name: <UserType>k__BackingField
       Entry: 7
-      Data: 434|System.RuntimeType, mscorlib
+      Data: 438|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: UnityEngine.GameObject[], UnityEngine.CoreModule
@@ -8025,7 +8089,7 @@ MonoBehaviour:
       Data: 
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -8040,14 +8104,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 435|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 439|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 436|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 440|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304D\u30A2\u30AF\u30C6\u30A3\u30D6\u306B\u3059\u308BGameObject(group1)"
@@ -8074,16 +8138,16 @@ MonoBehaviour:
       Data: unActiveTargetGameObjectGroup1
     - Name: $v
       Entry: 7
-      Data: 437|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 441|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: unActiveTargetGameObjectGroup1
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -8098,14 +8162,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 438|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 442|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 439|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 443|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304D\u975E\u30A2\u30AF\u30C6\u30A3\u30D6\u306B\u3059\u308BGameObject(group1)"
@@ -8132,16 +8196,16 @@ MonoBehaviour:
       Data: activeTargetGameObjectGroup2
     - Name: $v
       Entry: 7
-      Data: 440|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 444|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: activeTargetGameObjectGroup2
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -8156,14 +8220,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 441|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 445|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 442|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 446|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304D\u30A2\u30AF\u30C6\u30A3\u30D6\u306B\u3059\u308BGameObject(group2)"
@@ -8190,16 +8254,16 @@ MonoBehaviour:
       Data: unActiveTargetGameObjectGroup2
     - Name: $v
       Entry: 7
-      Data: 443|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 447|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: unActiveTargetGameObjectGroup2
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -8214,14 +8278,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 444|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 448|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 445|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 449|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304D\u975E\u30A2\u30AF\u30C6\u30A3\u30D6\u306B\u3059\u308BGameObject(group2)"
@@ -8248,16 +8312,16 @@ MonoBehaviour:
       Data: activeTargetGameObjectGroup3
     - Name: $v
       Entry: 7
-      Data: 446|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 450|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: activeTargetGameObjectGroup3
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -8272,14 +8336,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 447|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 451|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 448|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 452|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304D\u30A2\u30AF\u30C6\u30A3\u30D6\u306B\u3059\u308BGameObject(group3)"
@@ -8306,16 +8370,16 @@ MonoBehaviour:
       Data: unActiveTargetGameObjectGroup3
     - Name: $v
       Entry: 7
-      Data: 449|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 453|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: unActiveTargetGameObjectGroup3
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -8330,14 +8394,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 450|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 454|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 451|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 455|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304D\u975E\u30A2\u30AF\u30C6\u30A3\u30D6\u306B\u3059\u308BGameObject(group3)"
@@ -8364,16 +8428,16 @@ MonoBehaviour:
       Data: activeTargetGameObjectGroup4
     - Name: $v
       Entry: 7
-      Data: 452|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 456|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: activeTargetGameObjectGroup4
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -8388,14 +8452,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 453|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 457|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 454|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 458|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304D\u30A2\u30AF\u30C6\u30A3\u30D6\u306B\u3059\u308BGameObject(group4)"
@@ -8422,16 +8486,16 @@ MonoBehaviour:
       Data: unActiveTargetGameObjectGroup4
     - Name: $v
       Entry: 7
-      Data: 455|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 459|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: unActiveTargetGameObjectGroup4
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -8446,14 +8510,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 456|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 460|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 457|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 461|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304D\u975E\u30A2\u30AF\u30C6\u30A3\u30D6\u306B\u3059\u308BGameObject(group4)"
@@ -8480,16 +8544,16 @@ MonoBehaviour:
       Data: activeTargetGameObjectGroup5
     - Name: $v
       Entry: 7
-      Data: 458|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 462|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: activeTargetGameObjectGroup5
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -8504,14 +8568,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 459|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 463|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 460|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 464|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304D\u30A2\u30AF\u30C6\u30A3\u30D6\u306B\u3059\u308BGameObject(group5)"
@@ -8538,16 +8602,16 @@ MonoBehaviour:
       Data: unActiveTargetGameObjectGroup5
     - Name: $v
       Entry: 7
-      Data: 461|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 465|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: unActiveTargetGameObjectGroup5
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 434
+      Data: 438
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -8562,14 +8626,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 462|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 466|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 463|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 467|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u3068\u304D\u975E\u30A2\u30AF\u30C6\u30A3\u30D6\u306B\u3059\u308BGameObject(group5)"
@@ -8596,7 +8660,7 @@ MonoBehaviour:
       Data: isMonitoringPlayer
     - Name: $v
       Entry: 7
-      Data: 464|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 468|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isMonitoringPlayer
@@ -8620,14 +8684,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 465|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 469|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 466|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 470|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u3044\u308B\u30D7\u30EC\u30A4\u30E4\u30FC\u3092\u76E3\u8996\u3059\u308B"
@@ -8654,13 +8718,13 @@ MonoBehaviour:
       Data: playerListWithinRange
     - Name: $v
       Entry: 7
-      Data: 467|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 471|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: playerListWithinRange
     - Name: <UserType>k__BackingField
       Entry: 7
-      Data: 468|System.RuntimeType, mscorlib
+      Data: 472|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
       Data: System.Boolean[], mscorlib
@@ -8669,7 +8733,7 @@ MonoBehaviour:
       Data: 
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 468
+      Data: 472
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -8684,14 +8748,14 @@ MonoBehaviour:
       Data: false
     - Name: _fieldAttributes
       Entry: 7
-      Data: 469|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 473|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 470|System.NonSerializedAttribute, mscorlib
+      Data: 474|System.NonSerializedAttribute, mscorlib
     - Name: 
       Entry: 8
       Data: 
@@ -8713,116 +8777,18 @@ MonoBehaviour:
     - Name: $k
       Entry: 1
       Data: remonitoringTimeCounter
-    - Name: $v
-      Entry: 7
-      Data: 471|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
-    - Name: <Name>k__BackingField
-      Entry: 1
-      Data: remonitoringTimeCounter
-    - Name: <UserType>k__BackingField
-      Entry: 9
-      Data: 147
-    - Name: <SystemType>k__BackingField
-      Entry: 9
-      Data: 147
-    - Name: <SyncMode>k__BackingField
-      Entry: 7
-      Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: <IsSerialized>k__BackingField
-      Entry: 5
-      Data: false
-    - Name: _fieldAttributes
-      Entry: 7
-      Data: 472|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: remonitoringTime
-    - Name: $v
-      Entry: 7
-      Data: 473|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
-    - Name: <Name>k__BackingField
-      Entry: 1
-      Data: remonitoringTime
-    - Name: <UserType>k__BackingField
-      Entry: 9
-      Data: 147
-    - Name: <SystemType>k__BackingField
-      Entry: 9
-      Data: 147
-    - Name: <SyncMode>k__BackingField
-      Entry: 7
-      Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: <IsSerialized>k__BackingField
-      Entry: 5
-      Data: false
-    - Name: _fieldAttributes
-      Entry: 7
-      Data: 474|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: myIndex
     - Name: $v
       Entry: 7
       Data: 475|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
-      Data: myIndex
+      Data: remonitoringTimeCounter
     - Name: <UserType>k__BackingField
       Entry: 9
-      Data: 106
+      Data: 147
     - Name: <SystemType>k__BackingField
       Entry: 9
-      Data: 106
+      Data: 147
     - Name: <SyncMode>k__BackingField
       Entry: 7
       Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
@@ -8859,10 +8825,108 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: isArchitect
+      Data: remonitoringTime
     - Name: $v
       Entry: 7
       Data: 477|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+    - Name: <Name>k__BackingField
+      Entry: 1
+      Data: remonitoringTime
+    - Name: <UserType>k__BackingField
+      Entry: 9
+      Data: 147
+    - Name: <SystemType>k__BackingField
+      Entry: 9
+      Data: 147
+    - Name: <SyncMode>k__BackingField
+      Entry: 7
+      Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: <IsSerialized>k__BackingField
+      Entry: 5
+      Data: false
+    - Name: _fieldAttributes
+      Entry: 7
+      Data: 478|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: myIndex
+    - Name: $v
+      Entry: 7
+      Data: 479|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+    - Name: <Name>k__BackingField
+      Entry: 1
+      Data: myIndex
+    - Name: <UserType>k__BackingField
+      Entry: 9
+      Data: 106
+    - Name: <SystemType>k__BackingField
+      Entry: 9
+      Data: 106
+    - Name: <SyncMode>k__BackingField
+      Entry: 7
+      Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: <IsSerialized>k__BackingField
+      Entry: 5
+      Data: false
+    - Name: _fieldAttributes
+      Entry: 7
+      Data: 480|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: isArchitect
+    - Name: $v
+      Entry: 7
+      Data: 481|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isArchitect
@@ -8886,14 +8950,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 478|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 482|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 479|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 483|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u306B\u5165\u3063\u305F\u3068\u304DGameObject\u306Etransform\u3092\u5909\u66F4(\u5EFA\u7BC9)\u3059\u308B\u304B"
@@ -8920,7 +8984,7 @@ MonoBehaviour:
       Data: isDismantling
     - Name: $v
       Entry: 7
-      Data: 480|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 484|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isDismantling
@@ -8944,14 +9008,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 481|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 485|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 482|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 486|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u5185\u3092\u629C\u3051\u305F\u3068\u304D\u5EFA\u7BC9\u3057\u3066\u3044\u305F\u7269\u3092\u89E3\u4F53\u3059\u308B\u304B\uFF08\u5143\u306E\u4F4D\u7F6E\u306B\u623B\u3059\u304B\uFF09"
@@ -8978,80 +9042,16 @@ MonoBehaviour:
       Data: _architecturalBlueprint
     - Name: $v
       Entry: 7
-      Data: 483|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 487|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: _architecturalBlueprint
     - Name: <UserType>k__BackingField
       Entry: 7
-      Data: 484|System.RuntimeType, mscorlib
-    - Name: 
-      Entry: 1
-      Data: KUSAASOBIKOBO.ArchitecturalBlueprint, Assembly-CSharp
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: <SystemType>k__BackingField
-      Entry: 9
-      Data: 4
-    - Name: <SyncMode>k__BackingField
-      Entry: 7
-      Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: <IsSerialized>k__BackingField
-      Entry: 5
-      Data: true
-    - Name: _fieldAttributes
-      Entry: 7
-      Data: 485|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 1
-    - Name: 
-      Entry: 7
-      Data: 486|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
-    - Name: header
-      Entry: 1
-      Data: "\u5EFA\u7BC9\u8A2D\u8A08\u56F3"
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: _otherColliderHitGimmick
-    - Name: $v
-      Entry: 7
-      Data: 487|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
-    - Name: <Name>k__BackingField
-      Entry: 1
-      Data: _otherColliderHitGimmick
-    - Name: <UserType>k__BackingField
-      Entry: 7
       Data: 488|System.RuntimeType, mscorlib
     - Name: 
       Entry: 1
-      Data: KUSAASOBIKOBO.ColliderHitGimmick, Assembly-CSharp
+      Data: KUSAASOBIKOBO.ArchitecturalBlueprint, Assembly-CSharp
     - Name: 
       Entry: 8
       Data: 
@@ -9082,6 +9082,70 @@ MonoBehaviour:
       Data: 490|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
+      Data: "\u5EFA\u7BC9\u8A2D\u8A08\u56F3"
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: _otherColliderHitGimmick
+    - Name: $v
+      Entry: 7
+      Data: 491|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+    - Name: <Name>k__BackingField
+      Entry: 1
+      Data: _otherColliderHitGimmick
+    - Name: <UserType>k__BackingField
+      Entry: 7
+      Data: 492|System.RuntimeType, mscorlib
+    - Name: 
+      Entry: 1
+      Data: KUSAASOBIKOBO.ColliderHitGimmick, Assembly-CSharp
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: <SystemType>k__BackingField
+      Entry: 9
+      Data: 4
+    - Name: <SyncMode>k__BackingField
+      Entry: 7
+      Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: <IsSerialized>k__BackingField
+      Entry: 5
+      Data: true
+    - Name: _fieldAttributes
+      Entry: 7
+      Data: 493|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 494|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+    - Name: header
+      Entry: 1
       Data: "\u5225\u306ECHG"
     - Name: 
       Entry: 8
@@ -9106,7 +9170,7 @@ MonoBehaviour:
       Data: isPlayOtherCHGVideo
     - Name: $v
       Entry: 7
-      Data: 491|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 495|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isPlayOtherCHGVideo
@@ -9130,14 +9194,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 492|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 496|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 493|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 497|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30B3\u30E9\u30A4\u30C0\u30FC\u3092\u51FA\u305F\u3068\u304D\u5225\u306ECHG\u306E\u30D3\u30C7\u30AA\u30D7\u30EC\u30A4\u30E4\u30FC\u518D\u8AAD\u307F\u8FBC\u307F"
@@ -9164,7 +9228,7 @@ MonoBehaviour:
       Data: isIgnorePlayerListInOtherCHG
     - Name: $v
       Entry: 7
-      Data: 494|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 498|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isIgnorePlayerListInOtherCHG
@@ -9188,14 +9252,14 @@ MonoBehaviour:
       Data: true
     - Name: _fieldAttributes
       Entry: 7
-      Data: 495|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+      Data: 499|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 496|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 500|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u5225\u306ECHG\u306B\u5165\u3063\u305F\u3068\u304D\u30EA\u30B9\u30C8\u304B\u3089\u5BFE\u8C61\u3092\u9664\u5916"
@@ -9222,7 +9286,7 @@ MonoBehaviour:
       Data: isPrecisionSyncSendReserve
     - Name: $v
       Entry: 7
-      Data: 497|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+      Data: 501|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
       Data: isPrecisionSyncSendReserve
@@ -9246,112 +9310,112 @@ MonoBehaviour:
       Data: false
     - Name: _fieldAttributes
       Entry: 7
-      Data: 498|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: isEntered
-    - Name: $v
-      Entry: 7
-      Data: 499|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
-    - Name: <Name>k__BackingField
-      Entry: 1
-      Data: isEntered
-    - Name: <UserType>k__BackingField
-      Entry: 9
-      Data: 20
-    - Name: <SystemType>k__BackingField
-      Entry: 9
-      Data: 20
-    - Name: <SyncMode>k__BackingField
-      Entry: 7
-      Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: <IsSerialized>k__BackingField
-      Entry: 5
-      Data: true
-    - Name: _fieldAttributes
-      Entry: 7
-      Data: 500|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
-        mscorlib
-    - Name: 
-      Entry: 12
-      Data: 0
-    - Name: 
-      Entry: 13
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: 
-      Entry: 7
-      Data: 
-    - Name: $k
-      Entry: 1
-      Data: DebugText
-    - Name: $v
-      Entry: 7
-      Data: 501|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
-    - Name: <Name>k__BackingField
-      Entry: 1
-      Data: DebugText
-    - Name: <UserType>k__BackingField
-      Entry: 9
-      Data: 244
-    - Name: <SystemType>k__BackingField
-      Entry: 9
-      Data: 244
-    - Name: <SyncMode>k__BackingField
-      Entry: 7
-      Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
-    - Name: 
-      Entry: 6
-      Data: 
-    - Name: 
-      Entry: 8
-      Data: 
-    - Name: <IsSerialized>k__BackingField
-      Entry: 5
-      Data: true
-    - Name: _fieldAttributes
-      Entry: 7
       Data: 502|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: isEntered
+    - Name: $v
+      Entry: 7
+      Data: 503|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+    - Name: <Name>k__BackingField
+      Entry: 1
+      Data: isEntered
+    - Name: <UserType>k__BackingField
+      Entry: 9
+      Data: 20
+    - Name: <SystemType>k__BackingField
+      Entry: 9
+      Data: 20
+    - Name: <SyncMode>k__BackingField
+      Entry: 7
+      Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: <IsSerialized>k__BackingField
+      Entry: 5
+      Data: true
+    - Name: _fieldAttributes
+      Entry: 7
+      Data: 504|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 1
+      Data: DebugText
+    - Name: $v
+      Entry: 7
+      Data: 505|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
+    - Name: <Name>k__BackingField
+      Entry: 1
+      Data: DebugText
+    - Name: <UserType>k__BackingField
+      Entry: 9
+      Data: 244
+    - Name: <SystemType>k__BackingField
+      Entry: 9
+      Data: 244
+    - Name: <SyncMode>k__BackingField
+      Entry: 7
+      Data: System.Nullable`1[[UdonSharp.UdonSyncMode, UdonSharp.Runtime]], mscorlib
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: <IsSerialized>k__BackingField
+      Entry: 5
+      Data: true
+    - Name: _fieldAttributes
+      Entry: 7
+      Data: 506|System.Collections.Generic.List`1[[System.Attribute, mscorlib]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 503|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
+      Data: 507|UnityEngine.HeaderAttribute, UnityEngine.CoreModule
     - Name: header
       Entry: 1
       Data: "\u30C7\u30D0\u30C3\u30B0\u30C6\u30AD\u30B9\u30C8\u51FA\u529B\u7528UIText"

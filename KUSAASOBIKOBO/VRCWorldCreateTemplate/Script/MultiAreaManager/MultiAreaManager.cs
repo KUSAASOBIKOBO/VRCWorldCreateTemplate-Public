@@ -73,6 +73,7 @@ namespace KUSAASOBIKOBO
         public AudioSource SESpeaker;
         public AudioClip changeIsOpenSound;
         public AudioClip changeSourceColorSound;
+        public AudioClip BathStartSound;
         //public AudioClip[] enterAreaSound;
         public AudioClip warpSeamlessAreaWithIndexValueSE;//ナンバー入力によるシームレスエリアへのワープのSE
 
@@ -1069,6 +1070,80 @@ namespace KUSAASOBIKOBO
             ReflectStatus();
         }
 
+        public void AreaDateTimeSaveGlobal()
+        {
+            if (currentAreaIndex < 0) return;
+            if (GetAreaState(currentAreaIndex) == "") return;
+            if (_colliderHitGimmick == null || _colliderHitGimmick._timeManager == null) return;
+
+            string[] tmp = GetAreaState(currentAreaIndex).Split('|');
+            if (tmp.Length < 2) return;
+            string[] areaSetting_tmp = tmp[0].Split(',');
+
+            //更新
+            if(areaSetting_tmp.Length > 40 && areaSetting_tmp[40] == "0") areaSetting_tmp[40] = _colliderHitGimmick._timeManager.now.ToString("yyyy/MM/dd HH:mm:ss");
+
+            string tmp3 = "";
+            foreach (string tmp2 in areaSetting_tmp) tmp3 += tmp2 + ",";
+            tmp3 = tmp3.Remove(tmp3.Length - 1);
+            tmp3 += "|" + tmp[1];
+            SetAreaState(tmp3, currentAreaIndex);
+            if (SESpeaker != null && BathStartSound != null)
+            {
+                SESpeaker.PlayOneShot(BathStartSound);
+            }
+        }
+
+        public void AreaDateTimeSaveLocal()
+        {
+            if (currentAreaIndex < 0) return;
+            if (areaSettingLocal[currentAreaIndex] == null) return;
+            if (areaSettingLocalFlag[currentAreaIndex] == null) return;
+            if (_colliderHitGimmick == null || _colliderHitGimmick._timeManager == null) return;
+
+            if (areaSettingLocal[currentAreaIndex].Length > 40 && areaSettingLocal[currentAreaIndex][40] == "0") areaSettingLocal[currentAreaIndex][40] = _colliderHitGimmick._timeManager.now.ToString("yyyy/MM/dd HH:mm:ss");
+
+            areaSettingLocalFlag[currentAreaIndex][40] = true;
+
+            if (SESpeaker != null && BathStartSound != null)
+            {
+                SESpeaker.PlayOneShot(BathStartSound);
+            }
+        }
+
+        public float DateTimeSaveElapsedTime()
+        {
+            if (currentAreaIndex < 0) return 0.0f;
+            if (areaSettingLocal[currentAreaIndex] == null) return 0.0f;
+            if (areaSettingLocalFlag[currentAreaIndex] == null) return 0.0f;
+            if (GetAreaState(currentAreaIndex) == "") return 0.0f;
+            if (_colliderHitGimmick == null || _colliderHitGimmick._timeManager == null) return 0.0f;
+
+            TimeSpan timeSpanTmp;
+
+            if (areaSettingLocal[currentAreaIndex].Length > 40 && areaSettingLocalFlag[currentAreaIndex].Length > 40 && areaSettingLocalFlag[currentAreaIndex][40])
+            {
+                if (areaSettingLocal[currentAreaIndex][40] == "0") return 0.0f;
+
+                timeSpanTmp = _colliderHitGimmick._timeManager.now - Convert.ToDateTime(areaSettingLocalFlag[currentAreaIndex][40]);
+                return (float)timeSpanTmp.TotalSeconds;
+            }
+            else
+            {
+                string[] tmp = GetAreaState(currentAreaIndex).Split('|');
+                if (tmp.Length < 2) return 0.0f;
+                string[] areaSetting_tmp = tmp[0].Split(',');
+
+                if (areaSetting_tmp.Length > 40)
+                {
+                    if (areaSetting_tmp[40] == "0") return 0.0f;
+                    timeSpanTmp = _colliderHitGimmick._timeManager.now - Convert.ToDateTime(areaSetting_tmp[40]);
+                    return (float)timeSpanTmp.TotalSeconds;
+                }
+            }
+            return 0.0f;
+        }
+
         public void ReflectStatus(bool isMute = false, bool isNotExe = false)//objectにAudioSourceがついている場合原則そのサウンドをStopしてPlayする。isMuteがついているときは再生しない
         {
             if (currentAreaIndex < 0) return;
@@ -1121,8 +1196,9 @@ namespace KUSAASOBIKOBO
             //areaSetting_tmp[37] BGM2
             //areaSetting_tmp[38] PlayListStartIndex
             //areaSetting_tmp[39] PlayListEndIndex
+            //areaSetting_tmp[40] DateTimeSave //特に発火しません
 
-            int parameterNum = 40;
+            int parameterNum = 40;//areaSetting_tmp[40]は発火しないので41要素あるが一旦40で定義
             //Debug.Log("areaSetting_tmp.Length = "+ areaSetting_tmp.Length + ", areaSettingLocalFlag[currentAreaIndex].Length" + areaSettingLocalFlag[currentAreaIndex].Length);
             if (areaSetting_tmp.Length >= parameterNum && areaSettingLocalFlag[currentAreaIndex] != null && areaSettingLocalFlag[currentAreaIndex].Length >= parameterNum && areaSettingLocal[currentAreaIndex] != null && areaSettingLocal[currentAreaIndex].Length >= parameterNum)
             {

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: BeverageShaker
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 5bc8ff087d5da7b47a06b7b2dc78a18d,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 0619701110ee89b4f9acbf58f89dcbe8,
     type: 2}
   udonAssembly: 
   assemblyError: 

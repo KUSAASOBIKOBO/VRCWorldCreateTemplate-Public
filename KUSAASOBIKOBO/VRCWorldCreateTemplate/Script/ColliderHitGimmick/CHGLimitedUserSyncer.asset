@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: CHGLimitedUserSyncer
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 9e60c6a89536fa641bd6709887586b47,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 5b20085aaa0527e4c9b701f59e0b96cb,
     type: 2}
   udonAssembly: 
   assemblyError: 

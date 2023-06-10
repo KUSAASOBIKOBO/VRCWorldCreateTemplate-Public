@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: MultiAreaStateChangeButton
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: ad2a4a139550e0a4287eb3aa7164a669,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 618dd50067e7bfe42bc0a56fdae9b420,
     type: 2}
   udonAssembly: 
   assemblyError: 

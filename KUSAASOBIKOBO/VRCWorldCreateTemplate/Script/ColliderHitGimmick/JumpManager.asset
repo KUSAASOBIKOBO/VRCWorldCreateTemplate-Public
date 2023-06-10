@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: JumpManager
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 6c4e06630b74a5f49927b97d7c9eb058,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: de329533bde3eeb4789cbf91e5ab6517,
     type: 2}
   udonAssembly: 
   assemblyError: 

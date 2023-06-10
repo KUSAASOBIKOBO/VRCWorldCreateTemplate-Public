@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: BoolSyncer
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 629e1afea0384234992b196f4bb1dc2b,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: a4f74162e30de2b4dad7c06b246d89ec,
     type: 2}
   udonAssembly: 
   assemblyError: 

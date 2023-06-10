@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: VolumeSwitchButton
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: f51a4d2102f10c64b8d999e78d2c953e,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 8d971837dca625349a85297f24954de3,
     type: 2}
   udonAssembly: 
   assemblyError: 

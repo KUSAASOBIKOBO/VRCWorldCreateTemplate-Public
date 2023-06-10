@@ -464,7 +464,7 @@ namespace KUSAASOBIKOBO
                                     break;
                                 }
                             }
-                            overlayUI.SetInfomation(loadCommonText + "　" + tmp_counter + "/" + commonDLT.Length);
+                            overlayUI.SetInfomation(loadCommonText);
                         }
                     }
                     break;
@@ -749,7 +749,7 @@ namespace KUSAASOBIKOBO
                                     break;
                                 }
                             }
-                            overlayUI.SetInfomation(loadSkyboxText + "　" + tmp_counter + "/" + skyboxDLT.Length);
+                            overlayUI.SetInfomation(loadSkyboxText);
                         }
                     }
                     break;
@@ -990,7 +990,7 @@ namespace KUSAASOBIKOBO
                                     break;
                                 }
                             }
-                            overlayUI.SetInfomation(loadSkyboxText + "　" + tmp_counter + "/" + spSkyboxDLT.Length);
+                            overlayUI.SetInfomation(loadSkyboxText);
                         }
                     }
                     break;
@@ -1110,6 +1110,11 @@ namespace KUSAASOBIKOBO
                     {
                         DebugText.text += "\nLOADINGTIME SKYBOX:" + debugCounter;
                         debugCounter = 0;
+                    }
+
+                    foreach (DLTextureManager tmp_skyboxDLT in skyboxDLT)
+                    {
+                        tmp_skyboxDLT.DropVideo();
                     }
                     mode = ExternalResorceLoadMode.UNLOADING;
                     break;
@@ -1331,6 +1336,11 @@ namespace KUSAASOBIKOBO
                         DebugText.text += "\nLOADINGTIME SKYBOX:" + debugCounter;
                         debugCounter = 0;
                     }
+
+                    foreach (DLTextureManager tmp_spSkyboxDLT in spSkyboxDLT)
+                    {
+                        tmp_spSkyboxDLT.DropVideo();
+                    }
                     mode = ExternalResorceLoadMode.UNLOADING;
                     break;
 
@@ -1499,6 +1509,7 @@ namespace KUSAASOBIKOBO
                         DebugText.text += "\nLOADINGTIME SKYBOX:" + debugCounter;
                         debugCounter = 0;
                     }
+                    quickDuplicateTargetSpSkyboxDLT.DropVideo();
                     mode = ExternalResorceLoadMode.UNLOADING;
                     break;
 
@@ -1649,6 +1660,10 @@ namespace KUSAASOBIKOBO
                     {
                         DebugText.text += "\nLOADINGTIME COMMON:" + debugCounter;
                         debugCounter = 0;
+                    }
+                    foreach(DLTextureManager tmp_commonDLT in commonDLT)
+                    {
+                        tmp_commonDLT.DropVideo();
                     }
                     mode = ExternalResorceLoadMode.UNLOADING;
                     break;
@@ -2224,6 +2239,7 @@ namespace KUSAASOBIKOBO
                         DebugText.text += "\nLOADINGTIME COMMON:" + debugCounter;
                         debugCounter = 0;
                     }
+                    quickDuplicateTargetCommonDLT.DropVideo();
                     mode = ExternalResorceLoadMode.UNLOADING;
                     break;
 
@@ -2286,12 +2302,12 @@ namespace KUSAASOBIKOBO
         {
             if (!ReloadSkyboxTexture()) return false;
             if (!isForce && (!_startUpManager.GetIsFinish())) return false;
-            if (skyboxDLT[0] != null && skyboxDLT[0].urls[0] != null && urlList.elementList[frontIndex] != null) skyboxDLT[0].urls[0] = urlList.elementList[frontIndex];
-            if (skyboxDLT[1] != null && skyboxDLT[1].urls[0] != null && urlList.elementList[rightIndex] != null) skyboxDLT[1].urls[0] = urlList.elementList[rightIndex];
-            if (skyboxDLT[2] != null && skyboxDLT[2].urls[0] != null && urlList.elementList[backIndex] != null) skyboxDLT[2].urls[0] = urlList.elementList[backIndex];
-            if (skyboxDLT[3] != null && skyboxDLT[3].urls[0] != null && urlList.elementList[leftIndex] != null) skyboxDLT[3].urls[0] = urlList.elementList[leftIndex];
-            if (skyboxDLT[4] != null && skyboxDLT[4].urls[0] != null && urlList.elementList[upIndex] != null) skyboxDLT[4].urls[0] = urlList.elementList[upIndex];
-            if (skyboxDLT[5] != null && skyboxDLT[5].urls[0] != null && urlList.elementList[downIndex] != null) skyboxDLT[5].urls[0] = urlList.elementList[downIndex];
+            if (skyboxDLT.Length >= 1 && skyboxDLT[0] != null && skyboxDLT[0].urls[0] != null && urlList.elementList[frontIndex] != null) skyboxDLT[0].urls[0] = urlList.elementList[frontIndex];
+            if (skyboxDLT.Length >= 2 && skyboxDLT[1] != null && skyboxDLT[1].urls[0] != null && urlList.elementList[rightIndex] != null) skyboxDLT[1].urls[0] = urlList.elementList[rightIndex];
+            if (skyboxDLT.Length >= 3 && skyboxDLT[2] != null && skyboxDLT[2].urls[0] != null && urlList.elementList[backIndex] != null) skyboxDLT[2].urls[0] = urlList.elementList[backIndex];
+            if (skyboxDLT.Length >= 4 && skyboxDLT[3] != null && skyboxDLT[3].urls[0] != null && urlList.elementList[leftIndex] != null) skyboxDLT[3].urls[0] = urlList.elementList[leftIndex];
+            if (skyboxDLT.Length >= 5 && skyboxDLT[4] != null && skyboxDLT[4].urls[0] != null && urlList.elementList[upIndex] != null) skyboxDLT[4].urls[0] = urlList.elementList[upIndex];
+            if (skyboxDLT.Length >= 6 && skyboxDLT[5] != null && skyboxDLT[5].urls[0] != null && urlList.elementList[downIndex] != null) skyboxDLT[5].urls[0] = urlList.elementList[downIndex];
             return true;
         }
 
@@ -2352,12 +2368,12 @@ namespace KUSAASOBIKOBO
         {
             if (!ReloadSpSkyboxTexture()) return false;
             if (!isForce && (!_startUpManager.GetIsFinish())) return false;
-            if (spSkyboxDLT[0] != null && spSkyboxDLT[0].urls[0] != null && urlList.elementList[frontIndex] != null) spSkyboxDLT[0].urls[0] = urlList.elementList[frontIndex];
-            if (spSkyboxDLT[1] != null && spSkyboxDLT[1].urls[0] != null && urlList.elementList[rightIndex] != null) spSkyboxDLT[1].urls[0] = urlList.elementList[rightIndex];
-            if (spSkyboxDLT[2] != null && spSkyboxDLT[2].urls[0] != null && urlList.elementList[backIndex] != null) spSkyboxDLT[2].urls[0] = urlList.elementList[backIndex];
-            if (spSkyboxDLT[3] != null && spSkyboxDLT[3].urls[0] != null && urlList.elementList[leftIndex] != null) spSkyboxDLT[3].urls[0] = urlList.elementList[leftIndex];
-            if (spSkyboxDLT[4] != null && spSkyboxDLT[4].urls[0] != null && urlList.elementList[upIndex] != null) spSkyboxDLT[4].urls[0] = urlList.elementList[upIndex];
-            if (spSkyboxDLT[5] != null && spSkyboxDLT[5].urls[0] != null && urlList.elementList[downIndex] != null) spSkyboxDLT[5].urls[0] = urlList.elementList[downIndex];
+            if (spSkyboxDLT.Length >= 1 && spSkyboxDLT[0] != null && spSkyboxDLT[0].urls[0] != null && urlList.elementList[frontIndex] != null) spSkyboxDLT[0].urls[0] = urlList.elementList[frontIndex];
+            if (spSkyboxDLT.Length >= 2 && spSkyboxDLT[1] != null && spSkyboxDLT[1].urls[0] != null && urlList.elementList[rightIndex] != null) spSkyboxDLT[1].urls[0] = urlList.elementList[rightIndex];
+            if (spSkyboxDLT.Length >= 3 && spSkyboxDLT[2] != null && spSkyboxDLT[2].urls[0] != null && urlList.elementList[backIndex] != null) spSkyboxDLT[2].urls[0] = urlList.elementList[backIndex];
+            if (spSkyboxDLT.Length >= 4 && spSkyboxDLT[3] != null && spSkyboxDLT[3].urls[0] != null && urlList.elementList[leftIndex] != null) spSkyboxDLT[3].urls[0] = urlList.elementList[leftIndex];
+            if (spSkyboxDLT.Length >= 5 && spSkyboxDLT[4] != null && spSkyboxDLT[4].urls[0] != null && urlList.elementList[upIndex] != null) spSkyboxDLT[4].urls[0] = urlList.elementList[upIndex];
+            if (spSkyboxDLT.Length >= 6 && spSkyboxDLT[5] != null && spSkyboxDLT[5].urls[0] != null && urlList.elementList[downIndex] != null) spSkyboxDLT[5].urls[0] = urlList.elementList[downIndex];
             return true;
         }
 
@@ -2410,16 +2426,16 @@ namespace KUSAASOBIKOBO
             {
                 if (!ReloadData()) return false;
                 if (!isForce && (!_startUpManager.GetIsFinish())) return false;
-                if (dataDLT[0] != null && dataDLT[0].urls[0] != null && urlList.elementList[data1] != null) dataDLT[0].urls[0] = urlList.elementList[data1];
-                if (dataDLT[1] != null && dataDLT[1].urls[0] != null && urlList.elementList[data2] != null) dataDLT[1].urls[0] = urlList.elementList[data2];
-                if (dataDLT[2] != null && dataDLT[2].urls[0] != null && urlList.elementList[data3] != null) dataDLT[2].urls[0] = urlList.elementList[data3];
-                if (dataDLT[3] != null && dataDLT[3].urls[0] != null && urlList.elementList[data4] != null) dataDLT[3].urls[0] = urlList.elementList[data4];
-                if (dataDLT[4] != null && dataDLT[4].urls[0] != null && urlList.elementList[data5] != null) dataDLT[4].urls[0] = urlList.elementList[data5];
-                if (dataDLT[5] != null && dataDLT[5].urls[0] != null && urlList.elementList[data6] != null) dataDLT[5].urls[0] = urlList.elementList[data6];
-                if (dataDLT[6] != null && dataDLT[6].urls[0] != null && urlList.elementList[data7] != null) dataDLT[6].urls[0] = urlList.elementList[data7];
-                if (dataDLT[7] != null && dataDLT[7].urls[0] != null && urlList.elementList[data8] != null) dataDLT[7].urls[0] = urlList.elementList[data8];
-                if (dataDLT[8] != null && dataDLT[8].urls[0] != null && urlList.elementList[data9] != null) dataDLT[8].urls[0] = urlList.elementList[data9];
-                if (dataDLT[9] != null && dataDLT[9].urls[0] != null && urlList.elementList[data10] != null) dataDLT[9].urls[0] = urlList.elementList[data10];
+                if (dataDLT.Length >= 1 && dataDLT[0] != null && dataDLT[0].urls[0] != null && urlList.elementList[data1] != null) dataDLT[0].urls[0] = urlList.elementList[data1];
+                if (dataDLT.Length >= 2 && dataDLT[1] != null && dataDLT[1].urls[0] != null && urlList.elementList[data2] != null) dataDLT[1].urls[0] = urlList.elementList[data2];
+                if (dataDLT.Length >= 3 && dataDLT[2] != null && dataDLT[2].urls[0] != null && urlList.elementList[data3] != null) dataDLT[2].urls[0] = urlList.elementList[data3];
+                if (dataDLT.Length >= 4 && dataDLT[3] != null && dataDLT[3].urls[0] != null && urlList.elementList[data4] != null) dataDLT[3].urls[0] = urlList.elementList[data4];
+                if (dataDLT.Length >= 5 && dataDLT[4] != null && dataDLT[4].urls[0] != null && urlList.elementList[data5] != null) dataDLT[4].urls[0] = urlList.elementList[data5];
+                if (dataDLT.Length >= 6 && dataDLT[5] != null && dataDLT[5].urls[0] != null && urlList.elementList[data6] != null) dataDLT[5].urls[0] = urlList.elementList[data6];
+                if (dataDLT.Length >= 7 && dataDLT[6] != null && dataDLT[6].urls[0] != null && urlList.elementList[data7] != null) dataDLT[6].urls[0] = urlList.elementList[data7];
+                if (dataDLT.Length >= 8 && dataDLT[7] != null && dataDLT[7].urls[0] != null && urlList.elementList[data8] != null) dataDLT[7].urls[0] = urlList.elementList[data8];
+                if (dataDLT.Length >= 9 && dataDLT[8] != null && dataDLT[8].urls[0] != null && urlList.elementList[data9] != null) dataDLT[8].urls[0] = urlList.elementList[data9];
+                if (dataDLT.Length >= 10 && dataDLT[9] != null && dataDLT[9].urls[0] != null && urlList.elementList[data10] != null) dataDLT[9].urls[0] = urlList.elementList[data10];
             }
             return true;
         }
@@ -2448,26 +2464,26 @@ namespace KUSAASOBIKOBO
         {
             if (!ReloadCommonTexture()) return false;
             if (!isForce && (!_startUpManager.GetIsFinish())) return false;
-            if (commonDLT[0] != null && commonDLT[0].urls[0] != null && urlList.elementList[tx1] != null) commonDLT[0].urls[0] = urlList.elementList[tx1];
-            if (commonDLT[1] != null && commonDLT[1].urls[0] != null && urlList.elementList[tx2] != null) commonDLT[1].urls[0] = urlList.elementList[tx2];
-            if (commonDLT[2] != null && commonDLT[2].urls[0] != null && urlList.elementList[tx3] != null) commonDLT[2].urls[0] = urlList.elementList[tx3];
-            if (commonDLT[3] != null && commonDLT[3].urls[0] != null && urlList.elementList[tx4] != null) commonDLT[3].urls[0] = urlList.elementList[tx4];
-            if (commonDLT[4] != null && commonDLT[4].urls[0] != null && urlList.elementList[tx5] != null) commonDLT[4].urls[0] = urlList.elementList[tx5];
-            if (commonDLT[5] != null && commonDLT[5].urls[0] != null && urlList.elementList[tx6] != null) commonDLT[5].urls[0] = urlList.elementList[tx6];
-            if (commonDLT[6] != null && commonDLT[6].urls[0] != null && urlList.elementList[tx7] != null) commonDLT[6].urls[0] = urlList.elementList[tx7];
-            if (commonDLT[7] != null && commonDLT[7].urls[0] != null && urlList.elementList[tx8] != null) commonDLT[7].urls[0] = urlList.elementList[tx8];
-            if (commonDLT[8] != null && commonDLT[8].urls[0] != null && urlList.elementList[tx9] != null) commonDLT[8].urls[0] = urlList.elementList[tx9];
-            if (commonDLT[9] != null && commonDLT[9].urls[0] != null && urlList.elementList[tx10] != null) commonDLT[9].urls[0] = urlList.elementList[tx10];
-            if (commonDLT[10] != null && commonDLT[10].urls[0] != null && urlList.elementList[tx11] != null) commonDLT[10].urls[0] = urlList.elementList[tx11];
-            if (commonDLT[11] != null && commonDLT[11].urls[0] != null && urlList.elementList[tx12] != null) commonDLT[11].urls[0] = urlList.elementList[tx12];
-            if (commonDLT[12] != null && commonDLT[12].urls[0] != null && urlList.elementList[tx13] != null) commonDLT[12].urls[0] = urlList.elementList[tx13];
-            if (commonDLT[13] != null && commonDLT[13].urls[0] != null && urlList.elementList[tx14] != null) commonDLT[13].urls[0] = urlList.elementList[tx14];
-            if (commonDLT[14] != null && commonDLT[14].urls[0] != null && urlList.elementList[tx15] != null) commonDLT[14].urls[0] = urlList.elementList[tx15];
-            if (commonDLT[15] != null && commonDLT[15].urls[0] != null && urlList.elementList[tx16] != null) commonDLT[15].urls[0] = urlList.elementList[tx16];
-            if (commonDLT[16] != null && commonDLT[16].urls[0] != null && urlList.elementList[tx17] != null) commonDLT[16].urls[0] = urlList.elementList[tx17];
-            if (commonDLT[17] != null && commonDLT[17].urls[0] != null && urlList.elementList[tx18] != null) commonDLT[17].urls[0] = urlList.elementList[tx18];
-            if (commonDLT[18] != null && commonDLT[18].urls[0] != null && urlList.elementList[tx19] != null) commonDLT[18].urls[0] = urlList.elementList[tx19];
-            if (commonDLT[19] != null && commonDLT[19].urls[0] != null && urlList.elementList[tx20] != null) commonDLT[19].urls[0] = urlList.elementList[tx20];
+            if (commonDLT.Length >= 1 && commonDLT[0] != null && commonDLT[0].urls[0] != null && urlList.elementList[tx1] != null) commonDLT[0].urls[0] = urlList.elementList[tx1];
+            if (commonDLT.Length >= 2 && commonDLT[1] != null && commonDLT[1].urls[0] != null && urlList.elementList[tx2] != null) commonDLT[1].urls[0] = urlList.elementList[tx2];
+            if (commonDLT.Length >= 3 && commonDLT[2] != null && commonDLT[2].urls[0] != null && urlList.elementList[tx3] != null) commonDLT[2].urls[0] = urlList.elementList[tx3];
+            if (commonDLT.Length >= 4 && commonDLT[3] != null && commonDLT[3].urls[0] != null && urlList.elementList[tx4] != null) commonDLT[3].urls[0] = urlList.elementList[tx4];
+            if (commonDLT.Length >= 5 && commonDLT[4] != null && commonDLT[4].urls[0] != null && urlList.elementList[tx5] != null) commonDLT[4].urls[0] = urlList.elementList[tx5];
+            if (commonDLT.Length >= 6 && commonDLT[5] != null && commonDLT[5].urls[0] != null && urlList.elementList[tx6] != null) commonDLT[5].urls[0] = urlList.elementList[tx6];
+            if (commonDLT.Length >= 7 && commonDLT[6] != null && commonDLT[6].urls[0] != null && urlList.elementList[tx7] != null) commonDLT[6].urls[0] = urlList.elementList[tx7];
+            if (commonDLT.Length >= 8 && commonDLT[7] != null && commonDLT[7].urls[0] != null && urlList.elementList[tx8] != null) commonDLT[7].urls[0] = urlList.elementList[tx8];
+            if (commonDLT.Length >= 9 && commonDLT[8] != null && commonDLT[8].urls[0] != null && urlList.elementList[tx9] != null) commonDLT[8].urls[0] = urlList.elementList[tx9];
+            if (commonDLT.Length >= 10 && commonDLT[9] != null && commonDLT[9].urls[0] != null && urlList.elementList[tx10] != null) commonDLT[9].urls[0] = urlList.elementList[tx10];
+            if (commonDLT.Length >= 11 && commonDLT[10] != null && commonDLT[10].urls[0] != null && urlList.elementList[tx11] != null) commonDLT[10].urls[0] = urlList.elementList[tx11];
+            if (commonDLT.Length >= 12 && commonDLT[11] != null && commonDLT[11].urls[0] != null && urlList.elementList[tx12] != null) commonDLT[11].urls[0] = urlList.elementList[tx12];
+            if (commonDLT.Length >= 13 && commonDLT[12] != null && commonDLT[12].urls[0] != null && urlList.elementList[tx13] != null) commonDLT[12].urls[0] = urlList.elementList[tx13];
+            if (commonDLT.Length >= 14 && commonDLT[13] != null && commonDLT[13].urls[0] != null && urlList.elementList[tx14] != null) commonDLT[13].urls[0] = urlList.elementList[tx14];
+            if (commonDLT.Length >= 15 && commonDLT[14] != null && commonDLT[14].urls[0] != null && urlList.elementList[tx15] != null) commonDLT[14].urls[0] = urlList.elementList[tx15];
+            if (commonDLT.Length >= 16 && commonDLT[15] != null && commonDLT[15].urls[0] != null && urlList.elementList[tx16] != null) commonDLT[15].urls[0] = urlList.elementList[tx16];
+            if (commonDLT.Length >= 17 && commonDLT[16] != null && commonDLT[16].urls[0] != null && urlList.elementList[tx17] != null) commonDLT[16].urls[0] = urlList.elementList[tx17];
+            if (commonDLT.Length >= 18 && commonDLT[17] != null && commonDLT[17].urls[0] != null && urlList.elementList[tx18] != null) commonDLT[17].urls[0] = urlList.elementList[tx18];
+            if (commonDLT.Length >= 19 && commonDLT[18] != null && commonDLT[18].urls[0] != null && urlList.elementList[tx19] != null) commonDLT[18].urls[0] = urlList.elementList[tx19];
+            if (commonDLT.Length >= 20 && commonDLT[19] != null && commonDLT[19].urls[0] != null && urlList.elementList[tx20] != null) commonDLT[19].urls[0] = urlList.elementList[tx20];
             return true;
         }
 
@@ -2545,16 +2561,16 @@ namespace KUSAASOBIKOBO
         {
             if (!ReloadMultiBGM()) return false;
             if (!isForce && (!_startUpManager.GetIsFinish())) return false;
-            if (exMultiBGM[0] != null && exMultiBGM[0].urls[0] != null && urlList.elementList[bgm1] != null) exMultiBGM[0].urls[0] = urlList.elementList[bgm1];
-            if (exMultiBGM[1] != null && exMultiBGM[1].urls[0] != null && urlList.elementList[bgm2] != null) exMultiBGM[1].urls[0] = urlList.elementList[bgm2];
-            if (exMultiBGM[2] != null && exMultiBGM[2].urls[0] != null && urlList.elementList[bgm3] != null) exMultiBGM[2].urls[0] = urlList.elementList[bgm3];
-            if (exMultiBGM[3] != null && exMultiBGM[3].urls[0] != null && urlList.elementList[bgm4] != null) exMultiBGM[3].urls[0] = urlList.elementList[bgm4];
-            if (exMultiBGM[4] != null && exMultiBGM[4].urls[0] != null && urlList.elementList[bgm5] != null) exMultiBGM[4].urls[0] = urlList.elementList[bgm5];
-            if (exMultiBGM[5] != null && exMultiBGM[5].urls[0] != null && urlList.elementList[bgm6] != null) exMultiBGM[5].urls[0] = urlList.elementList[bgm6];
-            if (exMultiBGM[6] != null && exMultiBGM[6].urls[0] != null && urlList.elementList[bgm7] != null) exMultiBGM[6].urls[0] = urlList.elementList[bgm7];
-            if (exMultiBGM[7] != null && exMultiBGM[7].urls[0] != null && urlList.elementList[bgm8] != null) exMultiBGM[7].urls[0] = urlList.elementList[bgm8];
-            if (exMultiBGM[8] != null && exMultiBGM[8].urls[0] != null && urlList.elementList[bgm9] != null) exMultiBGM[8].urls[0] = urlList.elementList[bgm9];
-            if (exMultiBGM[9] != null && exMultiBGM[9].urls[0] != null && urlList.elementList[bgm10] != null) exMultiBGM[9].urls[0] = urlList.elementList[bgm10];
+            if (exMultiBGM.Length >= 1 && exMultiBGM[0] != null && exMultiBGM[0].urls[0] != null && urlList.elementList[bgm1] != null) exMultiBGM[0].urls[0] = urlList.elementList[bgm1];
+            if (exMultiBGM.Length >= 2 && exMultiBGM[1] != null && exMultiBGM[1].urls[0] != null && urlList.elementList[bgm2] != null) exMultiBGM[1].urls[0] = urlList.elementList[bgm2];
+            if (exMultiBGM.Length >= 3 && exMultiBGM[2] != null && exMultiBGM[2].urls[0] != null && urlList.elementList[bgm3] != null) exMultiBGM[2].urls[0] = urlList.elementList[bgm3];
+            if (exMultiBGM.Length >= 4 && exMultiBGM[3] != null && exMultiBGM[3].urls[0] != null && urlList.elementList[bgm4] != null) exMultiBGM[3].urls[0] = urlList.elementList[bgm4];
+            if (exMultiBGM.Length >= 5 && exMultiBGM[4] != null && exMultiBGM[4].urls[0] != null && urlList.elementList[bgm5] != null) exMultiBGM[4].urls[0] = urlList.elementList[bgm5];
+            if (exMultiBGM.Length >= 6 && exMultiBGM[5] != null && exMultiBGM[5].urls[0] != null && urlList.elementList[bgm6] != null) exMultiBGM[5].urls[0] = urlList.elementList[bgm6];
+            if (exMultiBGM.Length >= 7 && exMultiBGM[6] != null && exMultiBGM[6].urls[0] != null && urlList.elementList[bgm7] != null) exMultiBGM[6].urls[0] = urlList.elementList[bgm7];
+            if (exMultiBGM.Length >= 8 && exMultiBGM[7] != null && exMultiBGM[7].urls[0] != null && urlList.elementList[bgm8] != null) exMultiBGM[7].urls[0] = urlList.elementList[bgm8];
+            if (exMultiBGM.Length >= 9 && exMultiBGM[8] != null && exMultiBGM[8].urls[0] != null && urlList.elementList[bgm9] != null) exMultiBGM[8].urls[0] = urlList.elementList[bgm9];
+            if (exMultiBGM.Length >= 10 && exMultiBGM[9] != null && exMultiBGM[9].urls[0] != null && urlList.elementList[bgm10] != null) exMultiBGM[9].urls[0] = urlList.elementList[bgm10];
             return true;
         }
 

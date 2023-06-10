@@ -274,6 +274,7 @@ MonoBehaviour:
   isSeparateQuestUrlToggle: {fileID: 2212129112448552820}
   isStreamingToggle: {fileID: 2502195031739779750}
   globalPlayVideoOffsetFeedback: {fileID: 6931471517250770012}
+  _fixSyncTargetPlayer: {fileID: 0}
   isDataLoad: 0
   dataUrlIndex: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   isSkyboxLoad: 0

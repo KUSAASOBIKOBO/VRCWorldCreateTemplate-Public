@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: SeamlessAreaManager
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: 4a82543a7b2074a4babcd574a868b950,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 6706536d3341c0848a11e206865f7c40,
     type: 2}
   udonAssembly: 
   assemblyError: 

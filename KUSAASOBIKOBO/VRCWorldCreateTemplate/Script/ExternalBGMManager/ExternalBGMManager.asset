@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c333ccfdd0cbdbc4ca30cef2dd6e6b9b, type: 3}
   m_Name: ExternalBGMManager
   m_EditorClassIdentifier: 
-  serializedUdonProgramAsset: {fileID: 11400000, guid: a1affaa6798f51b40b18a97f54d3a40f,
+  serializedUdonProgramAsset: {fileID: 11400000, guid: 3bb07fd1a6928ad49ae41d1adaba1739,
     type: 2}
   udonAssembly: 
   assemblyError: 
